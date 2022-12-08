@@ -113,7 +113,9 @@ namespace Componentes
             // 
             // txtselecione
             // 
+            this.txtselecione.Enabled = false;
             this.txtselecione.Location = new System.Drawing.Point(80, 353);
+            this.txtselecione.MaxLength = 50;
             this.txtselecione.Name = "txtselecione";
             this.txtselecione.Size = new System.Drawing.Size(160, 20);
             this.txtselecione.TabIndex = 1;
@@ -135,6 +137,7 @@ namespace Componentes
             this.cdbfrutaslistadas.Name = "cdbfrutaslistadas";
             this.cdbfrutaslistadas.Size = new System.Drawing.Size(154, 32);
             this.cdbfrutaslistadas.TabIndex = 6;
+            this.cdbfrutaslistadas.SelectedIndexChanged += new System.EventHandler(this.cdbfrutaslistadas_SelectedIndexChanged);
             // 
             // lblFrutasselecionadas
             // 
@@ -154,6 +157,7 @@ namespace Componentes
             this.ltbFrutas.Name = "ltbFrutas";
             this.ltbFrutas.Size = new System.Drawing.Size(180, 220);
             this.ltbFrutas.TabIndex = 7;
+            this.ltbFrutas.SelectedIndexChanged += new System.EventHandler(this.ltbFrutas_SelectedIndexChanged);
             // 
             // lblFrutaslistadas
             // 
@@ -167,6 +171,7 @@ namespace Componentes
             // txtbdigitarfruta
             // 
             this.txtbdigitarfruta.Location = new System.Drawing.Point(80, 71);
+            this.txtbdigitarfruta.MaxLength = 50;
             this.txtbdigitarfruta.Name = "txtbdigitarfruta";
             this.txtbdigitarfruta.Size = new System.Drawing.Size(160, 20);
             this.txtbdigitarfruta.TabIndex = 0;
@@ -188,6 +193,7 @@ namespace Componentes
             this.btnselecionar.TabIndex = 2;
             this.btnselecionar.Text = "Selecionar";
             this.btnselecionar.UseVisualStyleBackColor = true;
+            this.btnselecionar.Click += new System.EventHandler(this.btnselecionar_Click);
             // 
             // btnlimpar
             // 
@@ -197,6 +203,7 @@ namespace Componentes
             this.btnlimpar.TabIndex = 4;
             this.btnlimpar.Text = "Limpar";
             this.btnlimpar.UseVisualStyleBackColor = true;
+            this.btnlimpar.Click += new System.EventHandler(this.btnlimpar_Click);
             // 
             // btnVoltar
             // 
@@ -215,6 +222,7 @@ namespace Componentes
             this.btninserir.TabIndex = 3;
             this.btninserir.Text = "Inserir";
             this.btninserir.UseVisualStyleBackColor = true;
+            this.btninserir.Click += new System.EventHandler(this.btninserir_Click);
             // 
             // frmfrutas
             // 
